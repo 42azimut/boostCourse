@@ -5,9 +5,10 @@
   <meta charset="utf-8">
 </head>
 <body>
+
   <h1><a href="index.html">WEB</a></h1>
-  <input type="button" value="night" onclick="night_click();">
-  <input type="button" value="day" onclick="day_click();">
+  <input type="button" value="night" onclick="night_click()">
+  <input type="button" value="day" onmouseover="day_mouseover();">
     <ol>
       <li><a href="1.html">HTML</a></li>
       <li><a href="2.html">CSS</a></li>
@@ -20,11 +21,11 @@
 
   <script>
     function night_click () {
-      document.querySelector('body').style.background = 'black'
+      document.querySelector('body').style.backgroundColor = 'black'
       document.querySelector('body').style.color = 'yellow'
 
     }
-    function day_click() {
+    function day_mouseover() {
       document.querySelector('body').style.background = 'white'
       document.querySelector('body').style.color = 'black'
     }
