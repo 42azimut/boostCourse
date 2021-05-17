@@ -41,23 +41,31 @@
       if ( night_day === 'night' ) {
         target.style.backgroundColor = 'black'
         target.style.color = 'yellow'
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+          while(i < alist.length){
+            if (i === 0) {
+            alist[i].style.color = 'pink'    
+            } else {
+              alist[i].style.color = 'powderblue'    
+            }
+            i++;
+          }
         document.querySelector('#night_day').value = 'day'
       } else {
         target.style.backgroundColor = 'white'
         target.style.color = 'black'
+
+        var alist = document.querySelectorAll('a');
+        var i = 1;
+          while(i < alist.length){
+            alist[i].style.color = 'blue'    
+            i++;
+          }
         document.querySelector('#night_day').value = 'night'
       }
     }
-
-    document.write('<br>');
-    document.write('<br>');
-
-    let fruites = ['apple', 'banana', 'melon'];
-    for (var i = 0; i < fruites.length; i++) {
-        document.write(`${fruites[i]}<br>`)
-      }
-      fruites.push('kakarot')
-
 
   </script>
 </body>

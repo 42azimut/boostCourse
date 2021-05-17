@@ -228,7 +228,7 @@ document.write(animals[1]);   // bee
 array_co.splice(1,1)   //index 값 범위 지정!
 ```
 
-### 반복문
+### 21. 반복문
 - while, 조건문
 - while(true) {       // true인 동안 {반복실행문}
   반복실행문;
@@ -255,7 +255,7 @@ while (i < 3) {
 document.write(i);   //반복문 범위 밖!!!
 // 4
 ```
-### 배열과 반복문
+### 22. 배열과 반복문
 - 응용해 보기 : 구글 검색쿼리주소와 반복문을 사용해서 하이퍼링크 만들기
 ```
 document.write(`<li><a href="http://google.com/search?q=${coworkers[i]}">${coworkers[i]}</a></li>`);
@@ -278,6 +278,24 @@ document.write(`<li><a href="http://google.com/search?q=${coworkers[i]}">${cowor
     }
   </script>  
   ```
+
+### 23.  배열과 반복문의 활용
+- querySeletor('a') :  a태그 한개만 가져온다!
+- querySelectorAll('a') :   
+- var alist = document.querySelectorAll('a');
+**생각해보기**
+1) 이번 강의에서 배운 코드를 약간 수정해서 첫 번째 하이퍼링크를 제외한 나머지 세 개의 하이퍼링크만 색깔이 바뀌도록 만들어보세요.
+```
+# 0번째 링크 핑크 나머지 위에 사항 변경!
+  while(i < alist.length){
+    if (i === 0) {
+      alist[i].style.color = 'pink'    
+      } else {
+        alist[i].style.color = 'powderblue'    
+      }
+      i++;
+  }
+```
 
 
 
