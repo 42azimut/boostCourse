@@ -2,6 +2,9 @@
 
 [자바스크립트의 시작 - 이고잉](https://www.boostcourse.org/cs124/joinLectures/52258)
 
+___
+## 웹과 자바스크립트
+
 ### 01. 수업소개
 - 자바스크립트 기초
 ### 02. 수업의 목적
@@ -101,9 +104,58 @@ alert(`Hello ${name}`)
 - **생각해보기**
   1) night 버튼 위에 마우스를 올렸을 때, 배경 색이 회색으로 바뀌도록 만들어봅시다.
 ```
-<input type='button' ... onmousepver='night_btn()'>
+<input type='button' ... onmouseover='night_btn()'>
 ...
 function night_btn() {
   document.querySelector('body').style.backgroundColor = 'grey'
 }
+```
+___
+
+## JavaScript 제어문
+
+### 13. 프로그램, 프로그래밍, 프로그래머
+- **생각해보기**
+ 1) 이번 강의에서 HTML과는 달리 Javascript는 컴퓨터 프로그래밍 언어라는 것을 배웠습니다. 오늘 배운 내용을 바탕으로 HTML은 왜 프로그래밍 언어가 아닌지 스스로에게 설명해봅시다.
+  - html 은 시간 순서에 의해 동작하는 것이 아니고, 정적인 묘사의 그친 언어이기 떄문.
+
+### 14. 조건문 예고
+
+### 15. 비교연산자와 불리언 (Comparison Operator & Boolean)
+
+```
+1 === 1;
+&lt; 가 < 의미   (less than)
+&gt; 가 > 의미   (greater than)
+```
+
+### 16. 조건문 (Conditional)
+- if else 
+
+**생각해보기**
+ 1) 다음 코드를 실행했을떄 결과는?
+```
+<script>
+  document.write('1')
+  if(true) {
+    document.write('2')
+  }
+  else {
+    document.write('3')
+  }
+  if(false) {
+    document.write('4')
+  }
+  else {
+    document.write('5')
+  }
+  document.write('6')
+</script>
+```
+```
+# result :
+1
+2
+5
+6
 ```
