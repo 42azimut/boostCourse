@@ -327,5 +327,10 @@ hello(2, 3, 1);
   </script>
 ```
 
-
+### 28. 함수 활용
+```
+<input id="night_day" type="button" value="night" onclick="
+  var tagget = document.querySelector('body');
+  if (this.value = 'night')   //  여기서 this 는 input 태그내에서 사용!
+```
 
