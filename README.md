@@ -282,7 +282,8 @@ document.write(`<li><a href="http://google.com/search?q=${coworkers[i]}">${cowor
 ### 23.  배열과 반복문의 활용
 - querySeletor('a') :  a태그 한개만 가져온다!
 - querySelectorAll('a') :   
-- var alist = document.querySelectorAll('a');
+- var alist = document.querySelectorAll('a');  //a태그 모두 가져오기!
+
 **생각해보기**
 1) 이번 강의에서 배운 코드를 약간 수정해서 첫 번째 하이퍼링크를 제외한 나머지 세 개의 하이퍼링크만 색깔이 바뀌도록 만들어보세요.
 ```
@@ -297,7 +298,34 @@ document.write(`<li><a href="http://google.com/search?q=${coworkers[i]}">${cowor
   }
 ```
 
+___
+## JavaScript 함수
+### 24. 함수 예고
 
+### 25. 함수
+
+### 26. 함수 - 매개변수와 인자 (paramete & argumnet)
+**생각해보기**
+1) 다음 코드의 실행 결과는 무엇일까요?
+```
+function hello(i, j, k) {
+  document.write(i + j - k);
+}
+hello(2, 3, 1);
+// 4
+```
+
+### 27. 함수 - 리턴
+```
+<script>
+    function sum(left, right) {
+      return left+right;
+    }
+    document.write(sum(2, 3)+'<br>')
+    document.write('<div style="color:red">'+sum(12, 3)+'</div>')
+    document.write(`<div style="font-size:3rem">${sum(22, 13)}</div>`)
+  </script>
+```
 
 
 
