@@ -159,3 +159,27 @@ ___
 5
 6
 ```
+### 17. 조건문의 활용
+- tag  속 value="값" 을 가져오는 방법
+  - `var night_day = document.getElementById(id).value`
+
+```
+<input id="night_day" type="button" value="night" onclick="night_day()">
+...
+<script>
+function night_day () {
+      var night_day = document.getElementById('night_day').value;
+      console.log(night_day)
+      if ( night_day === 'night' ) {
+        document.querySelector('body').style.backgroundColor = 'black'
+        document.querySelector('body').style.color = 'yellow'
+        document.querySelector('#night_day').value = 'day'
+      } else {
+        document.querySelector('body').style.backgroundColor = 'white'
+        document.querySelector('body').style.color = 'black'
+        document.querySelector('#night_day').value = 'night'
+      }
+    }
+```
+
+### 18. 리팩토링(중복의 제거)

@@ -7,8 +7,9 @@
 <body>
 
   <h1><a href="index.html">WEB</a></h1>
-  <input type="button" value="night" onclick="night_click()">
-  <input type="button" value="day" onmouseover="day_mouseover();">
+  <!-- <input type="button" value="night" onclick="night_click()">
+  <input type="button" value="day" onmouseover="day_mouseover();"> -->
+  <input id="night_day" type="button" value="night" onclick="night_day()">
     <ol>
       <li><a href="1.html">HTML</a></li>
       <li><a href="2.html">CSS</a></li>
@@ -20,15 +21,30 @@
   </p>
 
   <script>
-    function night_click () {
-      document.querySelector('body').style.backgroundColor = 'black'
-      document.querySelector('body').style.color = 'yellow'
+    // function night_click () {
+    //   document.querySelector('body').style.backgroundColor = 'black'
+    //   document.querySelector('body').style.color = 'yellow'
 
+    // }
+    // function day_mouseover() {
+    //   document.querySelector('body').style.background = 'white'
+    //   document.querySelector('body').style.color = 'black'
+    // }
+
+    function night_day () {
+      var night_day = document.getElementById('night_day').value;
+      console.log(night_day)
+      if ( night_day === 'night' ) {
+        document.querySelector('body').style.backgroundColor = 'black'
+        document.querySelector('body').style.color = 'yellow'
+        document.querySelector('#night_day').value = 'day'
+      } else {
+        document.querySelector('body').style.backgroundColor = 'white'
+        document.querySelector('body').style.color = 'black'
+        document.querySelector('#night_day').value = 'night'
+      }
     }
-    function day_mouseover() {
-      document.querySelector('body').style.background = 'white'
-      document.querySelector('body').style.color = 'black'
-    }
+    
   </script>
 </body>
 </html>
