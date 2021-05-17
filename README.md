@@ -193,3 +193,66 @@ function night_day () {
 - 스크립트 함수안에서 this.value 아직모르겠음! 변수에 담아서 사용!
 
 ### 19. 반복문 예고
+
+### 20. 배열 Array
+- length, push
+```
+let fruites = ['apple', 'banana', 'melon'];
+for (var i = 0; i < fruites.length(); i++) {
+  document.write('fruites[i]')
+}
+```
+```
+ array_co = [];
+    for (var i=0; i < coworkers.length; i++) {
+      //document.write(coworkers[i] + ' ');
+      array_co.push(coworkers[i])
+      //document.write('<br>')
+    }
+    document.write(array_co)
+```
+
+- array method : map(), reduce(), pop() ... etc
+
+**생각해보기**
+1) 다음과 같은 코드를 실행했을 때 화면에 어떻게 출력될지 생각해보세요.
+2) 배열에서 어떤 값을 삭제하기 위해서는 어떤 코드를 사용하면 될까요? (힌트: Javascript array remove value라고 검색해보세요!)
+
+
+```
+var animals = ["ant", "bee"];
+animals.push("camel");   // ["ant", "bee", "camel"]
+document.write(animals[1]);   // bee
+```
+```    
+array_co.splice(1,1)   //index 값 범위 지정!
+```
+
+### 반복문
+- while, 조건문
+- while(true) {       // true인 동안 {반복실행문}
+  반복실행문;
+}
+```
+<ul>
+    <script>
+      arr = ['jay', 'dust', 'kay', 'twice', 'itzy'];
+      var i = 0;
+      while(i < arr.length) {
+        document.write(`<li>${arr[i]}</li>`);
+        i++;
+      }
+    </script>
+  </ul>
+```
+**생각해보기**
+1) 다음 코드의 실행 결과는 무엇일까요?
+```
+var i = 0;
+while (i < 3) {
+  i = i + 2;
+}
+document.write(i);   //반복문 범위 밖!!!
+// 4
+```
+
