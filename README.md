@@ -255,4 +255,31 @@ while (i < 3) {
 document.write(i);   //반복문 범위 밖!!!
 // 4
 ```
+### 배열과 반복문
+- 응용해 보기 : 구글 검색쿼리주소와 반복문을 사용해서 하이퍼링크 만들기
+```
+document.write(`<li><a href="http://google.com/search?q=${coworkers[i]}">${coworkers[i]}</a></li>`);
+```
+
+**생각해보기**
+1) 반복문과 배열을 적절히 활용해서 fruits 배열을 다음과 같이 숫자와 함께 출력하려면 어떻게 해야할지 생각해보세요.
+  ```
+  1. apple
+  2. banana
+  3. coconut
+  ```
+  ```
+<script>
+    var fruites = ['apple', 'banana', 'coconut'];
+    var j = 0;
+    while(j < fruites.length) {
+      document.write(`${j+1}. ${fruites[j]}<br>`)
+      j++;
+    }
+  </script>  
+  ```
+
+
+
+
 
