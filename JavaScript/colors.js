@@ -37,7 +37,7 @@ function night_day (셀프) {
     fontSize.h1_Size('14px');
   } else {
     body.setBackgroundColor('white'); 
-    body.setColor('black')
+    body.setColor('black') 
     셀프.value = 'night'
     links.setColor('blue');
     fontSize.h1_Size('32px');
