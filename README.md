@@ -360,3 +360,12 @@ countries = {
   europe: 'England',
 }
 ```
+
+### 31. 객체 순회(iteration)
+**생각해보기**
+1) 지난 강의의 <생각해보기>에서 만들었던 countries라는 객체에서, 모든 객체의 이름과 값을 한 줄씩 출력하는 코드를 만들어 봅시다.
+```
+for (let key in countries) {
+  document.write(key, ' : ', countries[key], `<br>`)
+}
+```
