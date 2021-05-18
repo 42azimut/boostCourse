@@ -395,4 +395,14 @@ for (let key in countries) {
     }
     coworkers.printProgrammer();
 ```
+___
+## 자바스크립트 활용
+### 34. 파일로 쪼개서 정리 정돈하기
+**생각해보기**
+1) 여러 js 파일을 가져오고 싶다면 어떻게 하면 좋을지 알아봅시다. (힌트: html include multiple js files 라고 검색해보세요!)
+```
+<script src="colors.js"></script>
+<script src="fonts.js"></script>
+```
+
 
