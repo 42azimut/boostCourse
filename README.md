@@ -405,4 +405,19 @@ ___
 <script src="fonts.js"></script>
 ```
 
+### 35. 라이브러리와 프레임워크
+- jQuery 라이브러리
+- `$('a').css("color","powderblue");`
 
+**생각해보기**
+1) jQuery를 직접 자신의 HTML 파일에 추가해보고, 이를 이용해서 모든 h1 태그의 글자 크기를 바꾸는 코드를 작성해 봅시다.
+```
+// 이벤트 발생시 h1폰트 사이즈 변경! 
+var fontSize = {
+  h1_Size: function(size) {
+    $('h1').css('font-size', size)
+  }
+}
+```
+
+### 36. UI vs API
