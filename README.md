@@ -369,3 +369,30 @@ for (let key in countries) {
   document.write(key, ' : ', countries[key], `<br>`)
 }
 ```
+
+### 32. 객체 (프로퍼티와 메소드) proeprty & method
+- 객체에는 다양한 것들을 담을수 있다. 심시저 함수도 가능! 
+- 그 객체에 새로운 함수는 즉, **"메소드"** 라 한다.
+- this 사용 가능하다. 객체의 변수가 바뀌면 함수안에 그 변수르 수정해야 하기 떄문에. 이떄  this를 사용한다.
+  - 객체의 변수명대신에 이 메소드가 쓰인 객체를 가리키는 this를 사용해 주면 된다.
+  - ```
+    coworkers.showAll = function() {
+      for (var key in this) {
+        document.write(key + ' : ' + this[key] + '<br>');
+      }
+    }
+    ```
+- property : 객체에 해당하는 변수 위 예제 countries  에서 asia, europe 가 프로퍼티!
+- method : 객체에 해당하느 함수를 메소드!
+**생각해보기**
+1) 조건문을 사용해서 key가 programmer일 때만 출력하는 메소드 printProgrammer()을 만들어 봅시다.
+```
+    coworkers.printProgrammer = function() {
+      for (let key in this) {
+        if (key === 'programmer')
+          document.write(key + ' : ' + this[key] + `<br>`)
+      }
+    }
+    coworkers.printProgrammer();
+```
+

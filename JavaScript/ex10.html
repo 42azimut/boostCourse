@@ -19,8 +19,8 @@
     document.write(`developer: ${coworkers.developer}<br>`)
     document.write(`designer: ${coworkers.designer}<br>`)
     
-    coworkers.mable = 'Scallet'
-    document.write(`mable: ${coworkers.mable}<br>`)
+    coworkers.programmer = 'Scallet'
+    document.write(`programmer: ${coworkers.mable}<br>`)
     
     coworkers['data scientist'] = 'Thor';
     document.write(`data scientist: ${coworkers['data scientist']}<br>`)
@@ -35,6 +35,26 @@
       document.write(key, ' : ', coworkers[key],`<br>`)
     }
   </script>
-  
+
+  <h2>Property & Method</h2>
+  <script>
+    coworkers.showAll = function () {
+      for(let key in this) {
+        document.write(key + ' : ' + this[key] + `<br>`)
+      }
+    }
+    coworkers.showAll();
+  </script>
+
+  <h2>32. 생각해보기</h2>
+  <script>
+    coworkers.printProgrammer = function() {
+      for (let key in this) {
+        if (key === 'programmer')
+          document.write(key + ' : ' + this[key] + `<br>`)
+      }
+    }
+    coworkers.printProgrammer();
+  </script>
 </body>
 </html>
