@@ -421,8 +421,8 @@ var fontSize = {
 ```
 
 ### 36. UI vs API
-UI(User Interface) : 사용자들이 시스템을 제어하기 위해 조작하는 장치
-API(Application Programming Interface) : 개발자들이 사용하는 조작 장치, API는 두 응용 프로그램이 서로 대화 할 수 있도록 해주는 소프트웨어 중개자이다
+- UI(User Interface) : 사용자들이 시스템을 제어하기 위해 조작하는 장치
+- API(Application Programming Interface) : 개발자들이 사용하는 조작 장치, API는 두 응용 프로그램이 서로 대화 할 수 있도록 해주는 소프트웨어 중개자이다
 
 ### 37. 수업을 마치며
 - document : 태그를 삭제하거나 자식 태그를 추가하고 싶은 경우에는 document라는 객체를 살펴보세요. 
