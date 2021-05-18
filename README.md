@@ -333,4 +333,30 @@ hello(2, 3, 1);
   var tagget = document.querySelector('body');
   if (this.value = 'night')   //  여기서 this 는 input 태그내에서 사용!
 ```
+___
 
+## 자바스크립트 객체
+
+### 29. 객체 예고
+**생각해보기**
+1) 다음 코드에서 객체와 메소드를 찾으시오
+```
+var fruits = ["apple", "banana"];   //객체 "배열"인데 뭐지!: fruits
+var avengers = {    //  어벤져스 배열!
+  Ironman: 'Tony',
+  blackwidow: 'Scalett Johansson',
+}
+fruits.push("coconut");  // 메소드 : push()
+```
+
+### 30. 객체 (쓰기와 읽기)
+- 띄어 쓰기 있는 데이터 : `coworkers['data scientist'] = 'Thor';`
+
+**생각해보기**
+1) countries라는 이름의 빈 객체를 만들고, asia라는 이름을 가진 korea라는 값과, europe이라는 이름을 가진 england라는 값을 추가해봅시다.
+```
+countries = {
+  asia: 'Korea',
+  europe: 'England',
+}
+```
